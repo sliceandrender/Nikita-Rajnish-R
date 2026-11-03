@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff8f5">
+<title>Nikita & Rajnish — A Royal Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#fffaf5;--white:#fff;--pink:#f5dce3;--rose:#b76e79;--gold:#b89548;--deepgold:#8b6a2c;--ink:#4b3037}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Cormorant Garamond",serif;font-size:20px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at top left,#fbe9ed 0,transparent 45%),radial-gradient(ellipse at bottom right,#f8edda 0,transparent 40%)}
+h1,h2,h3,p{margin-top:0}h2{font-family:"Playfair Display",serif;font-weight:500;color:var(--deepgold);font-size:clamp(2rem,5vw,3.4rem);text-align:center;margin-bottom:12px}
+.section-sub{text-align:center;font-size:1.1rem;color:#916d72;margin-bottom:44px}
+section{padding:85px 20px;max-width:1120px;margin:auto}
+.gold-rule{display:flex;align-items:center;justify-content:center;gap:15px;color:var(--gold);margin:24px auto}.gold-rule:before,.gold-rule:after{content:"";height:1px;width:90px;background:linear-gradient(90deg,transparent,var(--gold))}.gold-rule:after{transform:scaleX(-1)}.gold-rule span{font-size:1.1rem}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:38px 18px;position:relative}
+.frame{width:min(900px,100%);padding:clamp(22px,5vw,52px);border:1px solid #c8a45b;outline:1px solid #e7d3a2;outline-offset:7px;border-radius:48% 48% 16px 16px / 20% 20% 16px 16px;background:rgba(255,255,255,.64);box-shadow:0 20px 70px #9d6d7412;position:relative}
+.frame:before,.frame:after{content:"✿";position:absolute;color:#cba95e;font-size:26px}.frame:before{top:12px;left:18px}.frame:after{bottom:12px;right:18px}
+.ganesha{width:64px;height:64px;object-fit:contain;margin:0 auto 12px;display:block}
+.kicker{letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font-size:.8rem}
+.hero h1{font-family:"Great Vibes",cursive;color:var(--deepgold);font-size:clamp(3.7rem,9vw,7.2rem);line-height:1.05;margin:15px 0}
+.hero .amp{color:#c78d9b;font-family:"Playfair Display",serif;font-size:.6em}
+.hero p{font-size:1.2rem}
+.media{aspect-ratio:16/9;width:100%;background:#f2e6e2;border:1px solid #c7a458;border-radius:14px;overflow:hidden;box-shadow:0 12px 28px #6b42421b;position:relative;margin:24px auto}
+video{width:100%;height:100%;object-fit:contain;background:#1c1718;display:block}
+.media-placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;color:#8f6b71;background:linear-gradient(135deg,#f9e9ed,#fff9f2);font-size:1rem;pointer-events:none}
+.media-placeholder strong{display:block;font-size:1.25rem;color:var(--deepgold);margin-bottom:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border:1px solid var(--gold);border-radius:40px;background:linear-gradient(135deg,#c9a75d,#f0dfb3,#b58b3d);color:#4d3820;font-family:"Playfair Display",serif;font-size:.9rem;text-decoration:none;cursor:pointer;box-shadow:0 6px 18px #b8954827;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #b8954840}.btn.secondary{background:#fff9f4}
+nav{position:sticky;top:0;z-index:10;background:#fffaf5eF;backdrop-filter:blur(10px);border-bottom:1px solid #eadbb9;display:flex;justify-content:center;gap:clamp(10px,3vw,30px);padding:12px;flex-wrap:wrap;font-size:.88rem}
+nav a{color:#8a6b40;text-decoration:none}nav a:hover{color:var(--rose)}
+.names{display:grid;grid-template-columns:1fr auto 1fr;gap:25px;align-items:center}.person{text-align:center;padding:28px 18px;border:1px solid #e3c98c;border-radius:140px 140px 18px 18px;background:#fffdf9;box-shadow:0 10px 32px #9a6c6c0c}.person-photo{display:block;width:min(100%,220px);aspect-ratio:4/5;object-fit:cover;margin:0 auto 18px;border:3px solid #d8b765;border-radius:120px 120px 18px 18px;padding:4px;background:#fff;box-shadow:0 8px 22px #b7838b22}.person h3{font-family:"Great Vibes",cursive;color:var(--rose);font-size:3.4rem;margin:12px 0}.person .role{letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-size:.75rem}.person p{font-size:1rem;line-height:1.5;margin:6px}.heart{font-size:2.5rem;color:#c88b9a}
+.invite-message{text-align:center;max-width:780px;margin:48px auto 0;padding:32px;border-top:1px solid #d9bd7b;border-bottom:1px solid #d9bd7b;font-family:"Noto Serif Devanagari",serif;line-height:1.9}.invite-message .english{font-family:"Cormorant Garamond",serif;font-size:1.3rem;line-height:1.5}
+.countdown{display:flex;justify-content:center;gap:clamp(8px,3vw,22px);flex-wrap:wrap;margin:32px 0}.time{min-width:80px;padding:15px 12px;border:1px solid #d6b96f;border-radius:12px;background:#fffdf8;text-align:center}.time strong{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--deepgold)}.time span{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--rose)}
+.timeline{position:relative;display:grid;gap:28px}.event{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center;padding:25px;border:1px solid #e1c783;border-radius:18px;background:#fffdf9;box-shadow:0 12px 28px #a77c7c0c}.event:nth-child(even){grid-template-columns:1.2fr 1fr}.event:nth-child(even) .event-copy{order:2}.event-date{color:var(--rose);font-size:1.05rem;letter-spacing:.05em}.event h3{font-family:"Playfair Display",serif;font-size:1.7rem;color:var(--deepgold);margin:8px 0}.event .media{margin:0}.event-icon{font-size:1.5rem;color:var(--gold)}
+.venue{text-align:center;background:linear-gradient(135deg,#fffdf9,#f9e8ed);border:1px solid #e0c582;border-radius:24px;padding:40px 20px}.venue h3{font-family:"Playfair Display",serif;color:var(--deepgold);font-size:2rem}.venue .pin{font-size:2.3rem;color:var(--rose)}
+footer{text-align:center;padding:50px 20px;background:#f6e4e8;color:#8d6c51;border-top:1px solid #d8bc77}footer .signature{font-family:"Great Vibes",cursive;font-size:3rem;color:var(--deepgold)}
+.music{position:fixed;right:16px;bottom:16px;z-index:20;display:flex;gap:8px;align-items:center}.music button{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:#fffaf0;color:var(--deepgold);font-size:1.1rem;cursor:pointer;box-shadow:0 5px 16px #8d6b421c}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}.petal{position:absolute;top:-25px;width:10px;height:15px;background:#e8b8c6;border-radius:80% 10% 80% 10%;opacity:.45;animation:fall linear infinite}.petal:nth-child(1){left:8%;animation-duration:15s}.petal:nth-child(2){left:27%;animation-duration:19s;animation-delay:2s}.petal:nth-child(3){left:55%;animation-duration:17s;animation-delay:5s}.petal:nth-child(4){left:78%;animation-duration:21s;animation-delay:1s}.petal:nth-child(5){left:91%;animation-duration:14s;animation-delay:7s}
+@keyframes fall{to{transform:translate(60px,110vh) rotate(500deg)}}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:720px){section{padding:60px 16px}.names{grid-template-columns:1fr;gap:15px}.heart{line-height:1}.person{border-radius:24px}.event,.event:nth-child(even){grid-template-columns:1fr}.event:nth-child(even) .event-copy{order:0}.event{padding:16px}.hero h1{font-size:4.2rem}.invite-message{padding:22px 10px}.music{right:10px;bottom:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* Recent refinements: family names and event date typography */
+.parent-names{font-size:1.12rem;line-height:1.8;font-weight:500;color:#6d4852}
+.event-date{font-size:1.22rem!important;font-weight:800!important;letter-spacing:.035em}
+
+</style>
+</head>
+<body>
+<div class="petals" aria-hidden="true"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i></div>
+<header class="hero" id="home">
+  <div class="frame reveal">
+    <!-- Add the transparent Lord Ganesha PNG here -->
+    <img class="ganesha" src="media/ganesha.png" alt="Lord Ganesha" width="64" height="64">
+    <div class="kicker">With the Blessings of Lord Ganesha</div>
+    <p style="margin:12px 0 0">Together with their families</p>
+    <h1>Nikita <span class="amp">&</span> Rajnish</h1>
+    <div class="gold-rule"><span>❧ ✧ ❧</span></div>
+    <p>Invite you to celebrate their sacred union</p>
+    <div class="media">
+      <video autoplay muted loop playsinline preload="auto" controls="false" disablepictureinpicture aria-label="Couple introduction video">
+        <source src="media/couple-intro.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="media-placeholder"><div><strong>Our Story, Our Forever</strong>Place your couple introduction video at<br><code>media/couple-intro.mp4</code></div></div>
+    </div>
+    <a class="btn" href="#invitation">Open Wedding Invitation ✨</a>
+  </div>
+</header>
+<nav aria-label="Main navigation"><a href="#invitation">The Couple</a><a href="#events">Celebrations</a><a href="#venue">Venue</a></nav>
+<main>
+<section id="invitation" class="reveal">
+  <div class="kicker" style="text-align:center">Two hearts • One destiny</div><h2>The Couple</h2><div class="gold-rule"><span>❧ ✧ ❧</span></div>
+  <div class="names">
+    <article class="person"><img class="person-photo" src="media/bride.png" alt="Bride Nikita" loading="lazy"><div class="role">The Bride</div><h3>Nikita</h3><p>Daughter of</p><p class="parent-names"><strong>Mrs.Rekha Devi</strong><br>&amp; Mr.<strong>Bhim Kumar Sahu</strong></p><div class="gold-rule"><span>✿</span></div></article>
+    <div class="heart" aria-hidden="true">♥</div>
+    <article class="person"><img class="person-photo" src="media/groom.png" alt="Groom Rajnish" loading="lazy"><div class="role">The Groom</div><h3>Rajnish</h3><p>Son of</p><p class="parent-names"><strong>Mrs.Pratima Prashad</strong><br>&amp; Mr.<strong>Baleshwar Prashad</strong></p><div class="gold-rule"><span>✿</span></div></article>
+  </div>
+  <div class="invite-message">
+    <h2 style="font-family:'Noto Serif Devanagari',serif;font-size:2.4rem">शुभ विवाह</h2>
+    दो दिल, एक रिश्ता, और जीवन भर का साथ।<br>
+    <span class="english">Two hearts, one beautiful journey, forever together.</span>
+    <p class="english" style="margin:25px 0 8px">With immense joy and the blessings of our families, we cordially invite you to celebrate the sacred union of <strong>Nikita & Rajnish</strong>.</p>
+    आप सभी सपरिवार सादर आमंत्रित हैं।<br>कृपया पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।
+    <p class="english" style="margin:8px 0 0">Your presence and blessings will make our celebration truly special.</p>
+  </div>
+</section>
+<section id="countdown" class="reveal">
+  <h2>Counting Down to Forever</h2><p class="section-sub">The auspicious day • 25 November 2026</p>
+  <div class="countdown" aria-live="polite"><div class="time"><strong id="days">--</strong><span>Days</span></div><div class="time"><strong id="hours">--</strong><span>Hours</span></div><div class="time"><strong id="minutes">--</strong><span>Minutes</span></div><div class="time"><strong id="seconds">--</strong><span>Seconds</span></div></div>
+  <div class="gold-rule"><span>❧ ✧ ❧</span></div>
+</section>
+<section id="events" class="reveal">
+  <h2>Wedding Celebrations</h2><p class="section-sub">Three days of traditions, joy, and cherished memories</p>
+  <div class="timeline">
+    <article class="event"><div class="event-copy"><div class="event-icon">✿</div><div class="event-date">MONDAY • 23 NOVEMBER 2026</div><h3>Lagan & Haldi Ceremony</h3><p>A golden beginning filled with blessings, laughter, and the warmth of turmeric hues.</p></div><div class="media"><video autoplay muted loop playsinline preload="metadata" controls="false" disablepictureinpicture><source src="media/lagan-haldi.mp4" type="video/mp4"></video><div class="media-placeholder"><div><strong>Lagan & Haldi</strong>Place video at <code>media/lagan-haldi.mp4</code></div></div></div></article>
+    <article class="event"><div class="event-copy"><div class="event-icon">❀</div><div class="event-date">TUESDAY • 24 NOVEMBER 2026</div><h3>Gidhari & Mehndi Ceremony</h3><p>Celebrating beautiful traditions, intricate mehndi, music, and heartfelt happiness.</p></div><div class="media"><video autoplay muted loop playsinline preload="metadata" controls="false" disablepictureinpicture><source src="media/gidhari-mehndi.mp4" type="video/mp4"></video><div class="media-placeholder"><div><strong>Gidhari & Mehndi</strong>Place video at <code>media/gidhari-mehndi.mp4</code></div></div></div></article>
+    <article class="event"><div class="event-copy"><div class="event-icon">❧</div><div class="event-date">WEDNESDAY • 25 NOVEMBER 2026</div><h3>Wedding Ceremony – Saat Phere</h3><p>Seven sacred vows, one eternal promise, and the beginning of forever.</p></div><div class="media"><video autoplay muted loop playsinline preload="metadata" controls="false" disablepictureinpicture><source src="media/saat-phere.mp4" type="video/mp4"></video><div class="media-placeholder"><div><strong>Saat Phere</strong>Place video at <code>media/saat-phere.mp4</code></div></div></div></article>
+  </div>
+</section>
+<section id="venue" class="reveal">
+  <h2>Join Us at the Celebration</h2><p class="section-sub">Your presence is the most precious gift</p>
+  <div class="venue"><div class="pin">♧</div><h3>Bride’s House</h3><p><strong>Address:</strong> Demotand, near Bank of India, Hazaribagh</p><p>We look forward to welcoming you for this joyous occasion.</p><a class="btn" href="https://maps.app.goo.gl/xAoMB6WotLN3sfoS7?g_st=ac" target="_blank" rel="noopener noreferrer">⌖ Get Directions</a></div>
+</section>
+</main>
+<footer><div class="gold-rule"><span>❧ ✧ ❧</span></div><div class="signature">Nikita & Rajnish</div><p>Forever begins on 25 • 11 • 2026</p><p style="font-family:'Noto Serif Devanagari',serif">सप्रेम आमंत्रण • शुभ विवाह</p></footer>
+<div class="music" aria-label="Wedding music controls"><button id="musicToggle" title="Play or pause wedding music" aria-label="Play music">♫</button><button id="muteToggle" title="Mute or unmute music" aria-label="Mute music">🔊</button></div>
+<audio id="weddingMusic" autoplay loop preload="auto"><source src="media/wedding-instrumental.mp3" type="audio/mpeg"></audio>
+<script>
+const introVideo=document.querySelector('.hero video');
+const introPlaceholder=introVideo.nextElementSibling;
+function syncPlaceholder(video){const placeholder=video.parentElement.querySelector('.media-placeholder');if(placeholder){placeholder.style.display=(video.readyState>=2||video.currentTime>0)?'none':'grid';}}
+document.querySelectorAll('.media video').forEach(video=>{
+  // Display-only cinematic clips: no controls and no video audio.
+  video.controls = false;
+  video.muted = true;
+  video.defaultMuted = true;
+  video.loop = true;
+  video.autoplay = true;
+  video.setAttribute('playsinline', '');
+  video.setAttribute('controlslist', 'nodownload noplaybackrate');
+  video.addEventListener('loadedmetadata',()=>syncPlaceholder(video));
+  video.addEventListener('loadeddata',()=>syncPlaceholder(video));
+  video.addEventListener('playing',()=>syncPlaceholder(video));
+  video.addEventListener('error',()=>{const p=video.parentElement.querySelector('.media-placeholder');if(p)p.style.display='grid';});
+  // Muted autoplay is allowed by most modern browsers. Attempt it without interrupting page load.
+  const playPromise = video.play();
+  if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(()=>{});
+});
+// Event video loading remains lazy via preload="none"; the browser fetches when play is requested.
+
+const music=document.getElementById('weddingMusic'),musicBtn=document.getElementById('musicToggle'),muteBtn=document.getElementById('muteToggle');
+// Attempt to start the song as soon as the invitation opens. Some browsers block
+// audible autoplay until the visitor interacts with the page.
+musicBtn.textContent='♫'; musicBtn.setAttribute('aria-label','Play music');
+music.addEventListener('play',()=>{musicBtn.textContent='Ⅱ';musicBtn.setAttribute('aria-label','Pause music')});
+music.addEventListener('pause',()=>{musicBtn.textContent='♫';musicBtn.setAttribute('aria-label','Play music')});
+window.addEventListener('load',()=>{music.play().catch(()=>{musicBtn.textContent='♫';musicBtn.setAttribute('aria-label','Play music')})});
+
+musicBtn.addEventListener('click',async()=>{if(music.paused){try{await music.play();musicBtn.textContent='Ⅱ';musicBtn.setAttribute('aria-label','Pause music')}catch(e){musicBtn.textContent='♫';}}else{music.pause();musicBtn.textContent='♫';musicBtn.setAttribute('aria-label','Play music')}});
+muteBtn.addEventListener('click',()=>{music.muted=!music.muted;muteBtn.textContent=music.muted?'🔇':'🔊';muteBtn.setAttribute('aria-label',music.muted?'Unmute music':'Mute music')});
+// Attempt music only after the visitor opens the invitation (user gesture); browser policies may still block it.
+document.querySelector('a[href="#invitation"]').addEventListener('click',async()=>{try{await music.play();musicBtn.textContent='Ⅱ';musicBtn.setAttribute('aria-label','Pause music')}catch(e){musicBtn.textContent='♫';musicBtn.title='Tap to play music'}});
+const target=new Date('2026-11-25T00:00:00+05:30').getTime();
+function updateCountdown(){let diff=Math.max(0,target-Date.now());const d=Math.floor(diff/86400000);diff%=86400000;const h=Math.floor(diff/3600000);diff%=3600000;const m=Math.floor(diff/60000);const s=Math.floor((diff%60000)/1000);document.getElementById('days').textContent=d;document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('minutes').textContent=String(m).padStart(2,'0');document.getElementById('seconds').textContent=String(s).padStart(2,'0')}
+updateCountdown();setInterval(updateCountdown,1000);
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+<style>
+/* Slice & Render promotional banner */
+.sr-promo{margin:28px auto 22px;max-width:900px;padding:26px 18px;text-align:center;background:linear-gradient(135deg,#fffaf7,#f9e8ed);border:1px solid #d9bd78;border-radius:22px;box-shadow:0 10px 30px #9a6c6c12}
+.sr-promo img{display:block;width:min(190px,55vw);max-height:105px;object-fit:contain;margin:0 auto 12px}
+.sr-promo p{margin:7px 0;color:#76505b;font-size:1rem}
+.sr-promo .sr-promo-title{font-family:Georgia,serif;font-weight:700;color:#9a7434;font-size:1.3rem}
+.sr-promo a{display:inline-block;margin-top:12px;padding:11px 22px;border-radius:999px;background:#9b7450;color:white;text-decoration:none;font-weight:700;letter-spacing:.02em;box-shadow:0 5px 15px #9b745033}
+.sr-promo a:hover{background:#805b39}
+</style>
+<section class="sr-promo" aria-label="Website card promotion">
+  <img src="media/slice-and-render.png" alt="Slice & Render" loading="lazy">
+  <p class="sr-promo-title">Want to Build a Beautiful Web Card?</p>
+  <p>Make your special moments memorable with a stunning digital invitation by <strong>Slice &amp; Render</strong>.</p>
+  <a href="https://wa.me/919431300450?text=Hi%20Slice%20%26%20Render%2C%20I%20want%20to%20build%20a%20web%20card." target="_blank" rel="noopener noreferrer">Click Here · Contact on WhatsApp</a>
+</section>
+
+</body></html>
